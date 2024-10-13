@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.ScrollPane?>
+<AnchorPane fx:id="aaa" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo13.notificationcontroller">
+    <AnchorPane prefHeight="510.0" prefWidth="639.0" styleClass="backgroundColor" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+
+        <Button layoutY="1.0" onAction="#toggleSlide" text="Slide" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="1.0"  />
+        <ScrollPane layoutX="27.0" layoutY="42.0" prefHeight="400.0" prefWidth="585.0" styleClass="backgroundColor" stylesheets="@Style.css">
+            <content>
+                <VBox fx:id="userVBox" spacing="10"  />
+            </content>
+        </ScrollPane>
+    </AnchorPane>
+    <!-- AnchorPane for the Sliding Pane -->
+    <AnchorPane fx:id="slidingPane" layoutY="35" prefHeight="400.0" prefWidth="88.0" style="-fx-background-color: #32a852;" AnchorPane.leftAnchor="0.0">
+        <VBox prefHeight="477" prefWidth="198.0" style="-fx-background-color: lightblue;" AnchorPane.leftAnchor="0.0">
+            <!-- r.fxml-->
+            <JFXButton fx:id="matches" alignment="BASELINE_LEFT" onAction="#goToMatches" prefHeight="44.0" prefWidth="176.0" styleClass="sidebarItem" text="Matches" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <graphic>
+                    <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@images/heart_11680038.png" />
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+
+            <JFXButton fx:id="notifications" alignment="BASELINE_LEFT" onAction="#goToNotifications" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Notifications" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <graphic>
+                    <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@images/—Pngtree—vector notification icon_4187244.png" />
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+
+            <JFXButton fx:id="profile" alignment="BASELINE_LEFT" onAction="#goToProfile" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Profile" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <graphic>
+                    <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@images/user_456212.png" />
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+
+            <JFXButton fx:id="messagesButton" alignment="BASELINE_LEFT" onAction="#goToMessages" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Messages" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="15.0" />
+                </font>
+                <graphic>
+                    <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@images/comment_12891542.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+        </VBox>    </AnchorPane>
+
+</AnchorPane>

@@ -1,0 +1,3 @@
+.backgroundColor {
+    -fx-background-color: linear-gradient(to bottom, #F8D8E7, #ACD7E9, #BEC6E4), linear-gradient(to left, #F8D8E7, #ACD7E9, #BEC6E4);
+}
